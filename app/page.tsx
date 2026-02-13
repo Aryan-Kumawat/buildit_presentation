@@ -1,32 +1,33 @@
 /**
- * In Next.js, app/page.tsx is the home page — when someone visits "/" they get this.
- * We import each section as a component and render them in order; the page is just
- * a stack of sections. SideNav stays fixed on the left and scrolls to each section by id.
+ * Project: CropWise (Pitch Deck)
+ * Author: Aryan Kumawat
+ * Updated for: Fertilizer & Crop Resource Planner Idea
  */
-import { HeroSection } from "@/components/hero-section"
-import { SignalsSection } from "@/components/signals-section"
-import { WorkSection } from "@/components/work-section"
-import { VideoSection } from "@/components/video-section"
-import { PrinciplesSection } from "@/components/principles-section"
-import { RevenueSection } from "@/components/revenue-section"
-import { ColophonSection } from "@/components/colophon-section"
+
+import { Hero } from "@/components/hero"
+import { Problem } from "@/components/problem"
+import { Solution } from "@/components/solution"
+import { Video } from "@/components/video"
+import { MVP } from "@/components/mvp"
+import { Revenue } from "@/components/revenue"
+import { Team } from "@/components/team"
 import { SideNav } from "@/components/side-nav"
 
 export default function Page() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen bg-neutral-950 text-white selection:bg-blue-500/30">
       <SideNav />
-      <div className="grid-bg fixed inset-0 opacity-30" aria-hidden="true" />
+      {/* Background grid effect - switched to blue/cyan tint for "Scientific" feel */}
+      <div className="fixed inset-0 z-0 opacity-20 pointer-events-none bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]" aria-hidden="true" />
 
-      {/* Sections in order: Hero → Problems → Solution → Video → MVP → Revenue → Credits. */}
-      <div className="relative z-10">
-        <HeroSection />
-        <SignalsSection />
-        <WorkSection />
-        <VideoSection />
-        <PrinciplesSection />
-        <RevenueSection />
-        <ColophonSection />
+      <div className="relative z-10 flex flex-col gap-24 pb-24">
+        <Hero />
+        <Problem />
+        <Solution />
+        <Video />
+        <MVP />
+        <Revenue />
+        <Team />
       </div>
     </main>
   )
