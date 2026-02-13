@@ -1,4 +1,6 @@
-import { ScanText, Calculator, Droplets, Languages, Zap, Sprout } from "lucide-react"
+"use client"
+
+import { ScanText, Calculator, Droplets, Languages } from "lucide-react"
 
 export function MVP() {
   const features = [
