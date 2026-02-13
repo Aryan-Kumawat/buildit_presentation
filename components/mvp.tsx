@@ -222,7 +222,7 @@ export default function App() {
               <div className="absolute inset-0 bg-emerald-500/20 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity" />
               <div className="relative px-16 py-8 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl">
                 <span className="text-3xl md:text-5xl font-black text-white italic uppercase tracking-tighter">Aryan Kumawat</span>
-                <p className="text-[10px] text-neutral-500 mt-2 uppercase tracking-[0.5em] font-bold">MUJ AI & Robotics • Class of 2026</p>
+                <p className="text-[10px] text-neutral-500 mt-2 uppercase tracking-[0.5em] font-bold">- • -</p>
               </div>
             </div>
           </div>
